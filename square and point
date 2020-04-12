@@ -1,83 +1,156 @@
 using System;
 
+class point
 
-namespace tasksquare
-{using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace tasksquare
 {
-    class point
-    {
-        public int x { set; get; }
-        public int y { set; get; }
-       
+
+    public int x { set; get; }
+
+    public int y { set; get; }
 
 
-    }
+
+
+
+
+
 }
 
+    
+
+
+
+
+namespace tasksquare
+
+{
+
+  
+
+    
+                
     class Program
+
     {
+
         static void Main(string[] args)
+
         {
+
             // Съставете програма с 2 класа: квадрат и точка.
+
             //Да се генерира произволен квадрат и точка в равнина.
+
             // Да се определи дали точката се намира в квадрата.
 
-           
+
+
+
+
             Console.WriteLine
+
                 ("Enter the coordinates \"X \" and \"Y \" at point \"A \", then enter the length of the side squared ABCD.");
-                     
-            point a = new point();                        
+
+
+
+            point a = new point();
+
             point b = new point();
-            point c = new point();                        
+
+            point c = new point();
+
             point d = new point();
+
             Console.Write("Cordinates X = ");
-            a.x = 
+
+            a.x =
+
                 int.Parse(Console.ReadLine());
+
             Console.Write("Cordinates Y = ");
-            a.y = 
+
+            a.y =
+
                 int.Parse(Console.ReadLine());
+
             Console.Write("Square lenght = ");
+
             int lenghtsquare =
+
                int.Parse(Console.ReadLine());
+
             b.y = a.y;
+
             b.x = a.x + lenghtsquare;
+
             c.x = b.x;
+
             c.y = b.y + lenghtsquare;
+
             d.x = a.x;
+
             d.y = a.y + lenghtsquare;
+
             Console.WriteLine
+
                 ("Generate a square with coordinates: Point A({0};{1}),Point B({2};{3}),Point C({4};{5}), Point D({6};{7})"
-                , a.x,a.y,b.x,b.y,c.x,c.y,d.x,d.y);
-                //кординати на точката 
+
+                , a.x, a.y, b.x, b.y, c.x, c.y, d.x, d.y);
+
+            //кординати на точката 
+
+
 
             Console.WriteLine("Enter the coordinates of a point \"P\":");
+
             point p = new point();
+
             Console.Write("Cordinates X = ");
-            p.x = 
+
+            p.x =
+
                 int.Parse(Console.ReadLine());
-            
-            
+
+
+
+
+
             Console.Write("Cordinate Y = ");
-            
-            p.y = 
+
+
+
+            p.y =
+
                 int.Parse(Console.ReadLine());
+
             Console.Clear();
+
             if (p.x > a.x & p.y < c.y)
 
+
+
             {
+
                 Console.WriteLine("The point is inside the square!!!");
 
-            }
-            else
-            {
-                Console.WriteLine("The point is out of square!!!");
+
 
             }
-                
+
+            else
+
+            {
+
+                Console.WriteLine("The point is out of square!!!");
+
+
+
+            }
+
+
+
         }
+
     }
+
 }
