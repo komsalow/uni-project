@@ -8,25 +8,11 @@ class point
 
     public int y { set; get; }
 
-
-
-
-
-
-
 }
-
-    
-
-
-
 
 namespace tasksquare
 
 {
-
-  
-
     
                 
     class Program
@@ -43,15 +29,9 @@ namespace tasksquare
 
             // Да се определи дали точката се намира в квадрата.
 
-
-
-
-
             Console.WriteLine
 
                 ("Enter the coordinates \"X \" and \"Y \" at point \"A \", then enter the length of the side squared ABCD.");
-
-
 
             point a = new point();
 
@@ -112,11 +92,7 @@ namespace tasksquare
                 int.Parse(Console.ReadLine());
 
 
-
-
-
             Console.Write("Cordinate Y = ");
-
 
 
             p.y =
@@ -128,12 +104,9 @@ namespace tasksquare
             if (p.x > a.x & p.y < c.y)
 
 
-
             {
 
                 Console.WriteLine("The point is inside the square!!!");
-
-
 
             }
 
